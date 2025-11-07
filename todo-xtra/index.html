@@ -1,0 +1,53 @@
+<html>
+    <head><style>
+      /*create the templete*/
+      body {
+        background-color: rgb(141, 155, 144);
+	      background-image: url("carrito4.gif");
+        margin: 0;
+        min-width: 250px;
+      }
+      {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+    </style></head>
+    <body>
+      <center>
+        <h1 style="color:yellow"><i>My Shopping List</i> </h1>
+        <form onsubmit="event.preventDefault(); addTodo()">
+            <label style="color:cyan"><h2><b>Item to Buy</b></style><center>
+                <input id="todo-input" type="text" placeholder="Enter Item to Buy Here">
+            </center>
+            </h2>
+            </label>
+        </form>
+        <ul id="todo-list"></ul>
+        <script src="todo.js"></script>
+      </center>
+    </body>
+</html>
